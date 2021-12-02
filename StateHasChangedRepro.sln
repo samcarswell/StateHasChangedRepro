@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateHasChangedRepro", "StateHasChangedRepro\StateHasChangedRepro.csproj", "{FDC14D9E-3817-4E37-9CED-FDEC21CC31AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDC14D9E-3817-4E37-9CED-FDEC21CC31AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC14D9E-3817-4E37-9CED-FDEC21CC31AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC14D9E-3817-4E37-9CED-FDEC21CC31AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC14D9E-3817-4E37-9CED-FDEC21CC31AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

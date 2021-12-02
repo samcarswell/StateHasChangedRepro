@@ -1,0 +1,24 @@
+<h1>Parent: @title</h1>
+
+<button class="btn btn-primary" @onclick="() => SetBool(true)">True</button>
+<button class="btn btn-primary" @onclick="() => SetBool(false)">False</button>
+
+<Child Bool="@Bool" @ref="Child"></Child>
+
+@code {
+    private bool Bool = false;
+    private Child Child;
+    private string title;
+
+    private async void SetBool(bool name)
+    {
+        Bool = name;
+        title = Bool ? "True" : "False";
+        // NOTE: This will work as expected; Child will be updated with the Parent
+        // await Task.Run(StateHasChanged);
+        // NOTE: This will only update the Child the second time it is clicked
+        await InvokeAsync(StateHasChanged);
+        await Child.Trigger();
+    }
+
+}

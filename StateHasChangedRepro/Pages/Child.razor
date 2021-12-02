@@ -1,0 +1,13 @@
+<h3>Child: @title</h3>
+
+@code {
+    [Parameter]
+    public bool Bool { set; get; } = false;
+    private string title;
+
+    public async Task Trigger()
+    {
+        title = Bool ? "True" : "False";
+        await InvokeAsync(StateHasChanged);
+    }
+}
